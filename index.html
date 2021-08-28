@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Shoot! </title>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="index.css">
+    </head>
+
+    <body>
+
+        <header> 
+            <h1> Shoot! </h1>
+        </header>
+
+        <div id="ScoreBoard" class="score-board"> 
+            <div id="UserBadge" class="badge"> User </div>
+            <div id="AIBadge" class="badge"> CPU </div>
+            <span id="UserScore">0</span> <span> : </span> <span id="CompScore">0</span>
+        </div>
+
+        <div id="message" class="result">
+            <p> Paper covers rock! You win!</p>
+        </div>
+
+        <div class="choices">
+            <div id="R" class="choice">
+                <img src="rock.jpg" alt="Rock" width="90%" height="90%"> 
+            </div>
+            <div id="P" class="choice">
+                <img src="paper.jpg" alt="Paper" width="75%" height="75%">
+            </div>
+            <div id="S" class="choice">
+                <img src="scissors.jpg" alt="Scissors" width="75%" height="75%">
+            </div>
+        </div>
+
+        <p id="move"> Make your move </p>
+
+    <script src="app.js" charset="utf-8"></script>
+    
+    </body>
+</html>

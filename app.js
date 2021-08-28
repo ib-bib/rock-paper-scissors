@@ -7,6 +7,8 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("R");
 const paper_div = document.getElementById("P");
 const scissors_div = document.getElementById("S");
+const uWord = "You".fontsize(3).sub();
+const cWord = "AI".fontsize(3).sub();
 
 function getCompChoice(){
     const choices = ["R", "S", "P"];
@@ -23,13 +25,13 @@ function convertLetter(x) {
 function win(user, comp) {
     userScr++;
     userScore_span.innerHTML = userScr;
-    result_p.innerHTML = `${convertLetter(user)} beats ${convertLetter(comp)}!\nYou win!`;
+    result_p.innerHTML = `${convertLetter(user)}${uWord} beats ${convertLetter(comp)}${cWord}!\nYou win!`;
 }
 
 function lose(user, comp) {
     compScr++;
     compScore_span.innerHTML = compScr;
-    result_p.innerHTML =` ${convertLetter(comp)} beats ${convertLetter(user)}!\nYou lose...`;
+    result_p.innerHTML =` ${convertLetter(comp)}${cWord} beats ${convertLetter(user)}${uWord}!\nYou lose...`;
 }
 
 function draw() {
